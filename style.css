@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #fff7ed, #ffedd5);
+    color: #333;
+    line-height: 1.6;
+    padding: 30px 15px;
+}
+
+/* Main Card */
+
+.recipe-card {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    padding: 30px 25px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    color: #c2410c;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #666;
+    font-size: 17px;
+}
+
+/* Image */
+
+figure {
+    margin: 0;
+}
+
+figure img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+figcaption {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #777;
+    background: #fff7ed;
+    font-style: italic;
+}
+
+/* Sections */
+
+section {
+    padding: 25px 35px;
+}
+
+h2 {
+    color: #c2410c;
+    font-size: 26px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #fed7aa;
+    padding-bottom: 8px;
+}
+
+/* Ingredients */
+
+.ingredients ul {
+    list-style-type: square;
+    padding-left: 25px;
+}
+
+.ingredients li {
+    margin-bottom: 8px;
+}
+
+/* Preparation */
+
+.preparation ol {
+    padding-left: 25px;
+}
+
+.preparation li {
+    margin-bottom: 12px;
+    padding-left: 5px;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background: #c2410c;
+    color: white;
+    padding: 18px;
+    font-weight: bold;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px 10px;
+    }
+
+    .recipe-card {
+        border-radius: 14px;
+    }
+
+    header {
+        padding: 25px 18px 15px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    figure img {
+        height: 250px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .ingredients li,
+    .preparation li {
+        font-size: 15px;
+    }
+}
